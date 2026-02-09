@@ -1,0 +1,566 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #333333;
+}
+
+.encabezado-heaer {
+    background-color: rgb(248, 248, 248);
+}
+
+/* SLIDERRRRRR DE FOTOS Y BIENVE*/
+
+.top-bar {
+    background-color: #000000;
+    color: white;
+    padding: 5px 20px;
+    font-size: 12px;
+}
+/* MAIN*/
+.main-nav {
+    position: relative; /* FUNDAMENTAL */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ul-opciones{
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #00772e;
+    font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: clamp(280px, 60vh, 720px); /* responsive en alto */
+  overflow: hidden;
+  background: #000;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.card {
+    font-weight: bold;
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #c2c2c2; /* Verde oscuro permanente */
+}
+
+.card:hover {
+    background: #00772e;
+    color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: clamp(280px, 60vh, 720px); /* responsive en alto */
+  overflow: hidden;
+  background: #000;
+}
+
+.slider {
+  display: flex;
+  width: 110%;            /* cubre diagonales en pantallas grandes */
+  height: 100%;
+  margin-left: -5%;
+}
+
+.panel {
+  position: relative;
+  flex: 1;               /* paneles proporcionales en cualquier pantalla */
+  height: 100%;
+  overflow: hidden;
+  transform: skewX(-10deg);
+  margin-left: -6vw;    /* solape responsive */
+}
+
+/* Línea diagonal blanca (una sola por separación) */
+.panel:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3px;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  z-index: 3;
+}
+
+.panel:first-child {
+  margin-left: 0;
+}
+
+/* Imagen base */
+.panel img {
+  position: absolute;
+  inset: -12%;          /* expande para tapar huecos negros */
+  width: 140%;
+  height: 120%;
+  object-fit: cover;
+  transform: skewX(10deg);
+  left: -20%;
+}
+
+/* Capa de barrido que entra encima */
+.panel .wipe {
+  position: absolute;
+  inset: -12%;
+  background-size: cover;
+  background-position: center;
+  transform: skewX(10deg) translateY(-100%);
+  left: -20%;
+  animation: wipeDown 1s ease forwards;
+  z-index: 2;
+}
+
+@keyframes wipeDown {
+  from {
+    transform: skewX(10deg) translateY(-100%);
+  }
+  to {
+    transform: skewX(10deg) translateY(0);
+  }
+}
+
+/* Degradado frontal */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 39, 7, 0.925), transparent);
+  z-index: 4;
+}
+
+/* Texto frontal */
+.hero-text {
+  margin-top: 5px;
+  position: absolute;
+  bottom: 6vw;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  z-index: 5;
+  padding: 0 1rem;
+  margin-bottom: -40px;
+}
+
+.hero-text h1 {
+  font-size: clamp(1 rem, 4vw, 1.5rem);
+  font-weight: bold;
+}
+
+.hero-text p {
+    font-style: italic;
+  font-size: clamp(0.5rem, 2.2vw, 0.9rem);
+  margin-top: 8px;
+  color: rgb(145, 255, 0);
+}
+
+/* Ajuste móvil: menos inclinación */
+@media (max-width: 768px) {
+  .panel {
+    transform: skewX(-7deg);
+    margin-left: -4vw;
+  }
+  .panel img,
+  .panel .wipe {
+    transform: skewX(7deg);
+  }
+}
+
+
+
+
+
+
+/* FONDOOO BODY */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #333333;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("img/VECTOR\ OK.svg");
+    background-size:100x 100;
+    opacity: 0.05;
+    animation: moverFondo 50s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moverFondo {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 400px 400px;
+    }
+}
+
+/*icono whatsappppppppppppppppppp*/
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* empizaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+/* 1. Estado Normal: Cómo se ven siempre */
+.main-nav ul li a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #00772e; /* Tu verde original */
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.3s ease; /* Para que el cambio de color sea suave */
+    border-radius: 4px;
+}
+
+/* 2. Estado Hover: Cuando pasas el mouse por encima */
+.main-nav ul li a:hover {
+    color: white;             /* El texto cambia a blanco */
+    background-color: #00772e; /* El fondo se pone verde */
+}
+
+/* 3. Estado Activo: Para resaltar en qué botón se hizo clic */
+/* Esta clase la añadiremos manualmente en el HTML */
+.main-nav ul li a.active {
+    color: white;
+    background-color: #005520; /* Un verde más oscuro para diferenciarlo */
+    /*border-bottom: 3px solid #ffcc00; /* Opcional: una rayita amarilla abajo */
+}
+
+
+
+
+
+
+
+
+
+.biografia-seccion {
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.biografia-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.biografia-texto {
+    flex: 1; /* Toma más espacio que la imagen */
+}
+
+.nombre-autoridad {
+    color: #008120; /* Azul institucional */
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.cargo-autoridad {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contenido-texto p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.biografia-imagen {
+    flex: 0 0 400px; /* Ancho fijo para la imagen en escritorio */
+}
+
+.biografia-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 10px 10px 0px #f0f0f0; /* Efecto decorativo opcional */
+}
+
+/* RESPONSIVE: Para celulares */
+@media (max-width: 768px) {
+    .biografia-container {
+        flex-direction: column; /* Se pone uno debajo del otro */
+    }
+    
+    .biografia-imagen {
+        flex: 1;
+        width: 100%;
+        order: -1; /* Mueve la foto arriba del texto en celulares */
+    }
+}
+
+
+
+
+
+
+
+.footer-municipal {
+    background-color: #1a1a1a; /* Gris muy oscuro casi negro */
+    color: #ffffff;
+    padding: 60px 0 0 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 0 20px 40px 20px;
+}
+
+.footer-column01{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px; /* Baja aún más */
+    padding-top: 10px; /* Espacio interno arriba */
+}
+
+.footer-column h4 {
+    color: #009c1a; /* El verde de tu logo */
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Línea decorativa bajo los títulos */
+.footer-column h4::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #009c1a;
+    margin-top: 8px;
+}
+.logo img {
+    width: 450px;      /* ajusta el tamaño */
+    height: auto;      /* mantiene proporción */
+}
+
+.footer-logo {
+    max-width: 310px;
+    filter: brightness(0) invert(1); /* Hace que el logo se vea blanco si es oscuro */
+    margin-bottom: 1px;
+}
+
+.footer-description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #cccccc;
+    margin-bottom:10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    color: #009c1a;
+    padding-left: 5px;
+}
+
+.footer-p{
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 5px;      /* reduce espacio inferior */
+    line-height: 1.2;        /* ajusta altura entre líneas */
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: white;
+    background: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #009c1a;
+}
+
+.footer-bottom {
+    background-color: #111111;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid #333;
+    font-size: 13px;
+    color: #888;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        text-align: center;
+    }
+    .footer-column h4::after {
+        margin: 8px auto;
+    }
+}
+
+
+
+
+/* lo de los textos del contenidp */
+/* SECCIÓN INSTITUCIONAL EN DOS COLUMNAS */
+.institucional {
+    padding: 80px 20px;
+    
+}
+
+.institucional-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.institucional-bloque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: #f7f7f7da;
+}
+
+.institucional-bloque.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.institucional-texto h2 {
+    color: #00772e;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    margin-bottom: 20px;
+}
+
+.institucional-texto p {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.institucional-imagen img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.institucional-imagen img:hover {
+    transform: scale(1.03);
+}
+
+/* RESPONSIVE: móviles */
+@media (max-width: 768px) {
+    .institucional-bloque,
+    .institucional-bloque.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .institucional-imagen img {
+        height: 240px;
+    }
+}
+
+/* PARA LO DEL INICIO LA ANIMACION CONTENIDO */
+
+.institucional-bloque {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.institucional-bloque.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

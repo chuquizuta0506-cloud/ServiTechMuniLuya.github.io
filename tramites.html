@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MDL Trámites</title>
     <link rel="icon" href="img/LOGO TRANSPARENTE MDL.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="ESTILOS/estilos.css">
+    <link rel="stylesheet" href="ESTILOS/responsive.css">
 </head>
 
 <body>
@@ -16,26 +18,33 @@
         </div>
         <nav class="main-nav">
             <div class="logo">
-                <img src="img/ENCABEZADO.png" alt="Logo MML" >
+                <img src="img/ENCABEZADO.png" alt="Logo MDL">
             </div>
-            <ul>
+            <!-- BOTÓN MENÚ RESPONSIVE -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="ul-opciones">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="municipalidad.html" >Municipalidad</a></li>
-                <li><a href="noticias.html" >Noticias</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
                 <li><a href="transparencia.html">Transparencia</a></li>
-                <li><a href="tramites.html" class="active" >Trámites</a></li>
+                <li><a href="tramites.html" class="active">Trámites</a></li>
             </ul>
+            </section>
         </nav>
     </header>
     <section class="biografia-seccion">
-    <div class="biografia-container">
+        <div class="biografia-container">
 
-        
-    </div>
-</section>
-    <a href="https://wa.me/51956393952?text=Hola,%20quisiera%20información%20sobre..." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-    <img src="img/whatsapp.svg" alt="WhatsApp">
+
+        </div>
+    </section>
+    <a href="https://wa.me/51956393952?text=Hola,%20quisiera%20información%20sobre..." class="whatsapp-float"
+        target="_blank" aria-label="WhatsApp">
+        <img src="img/whatsapp.svg" alt="WhatsApp">
     </a>
+    <script src="JS/script.js"></script>
 </body>
 <footer class="footer-municipal">
     <div class="footer-container">
@@ -45,9 +54,12 @@
                 Trabajando por el desarrollo integral de nuestro distrito, con transparencia y compromiso social.
             </p>
             <div class="social-links">
-                <a href="https://www.facebook.com/MuniDeLuya" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
-                <a href="https://www.tiktok.com/@munideluya" target="_blank"     aria-label="TikTok"><i class="fab fa-tiktok"></i> TikTok</a>
-                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/MuniDeLuya" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.tiktok.com/@munideluya" target="_blank" aria-label="TikTok"><i
+                        class="fab fa-tiktok"></i> TikTok</a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i> Instagram</a>
             </div>
         </div>
 
@@ -63,13 +75,14 @@
 
         <div class="footer-column">
             <h4>Contáctanos</h4>
-            <p class="footer-p"><i class="fa-solid fa-location-dot"></i> &ensp;Jr. Diego Mori&ensp;#447 - Luya - Amazonas</p>
+            <p class="footer-p"><i class="fa-solid fa-location-dot"></i> &ensp;Jr. Diego Mori&ensp;#447 - Luya -
+                Amazonas</p>
             <p class="footer-p"><i class="fa-solid fa-phone"></i> &ensp;Teléfono: (+51) 900 616 367</p>
             <p class="footer-p"><i class="fa-solid fa-envelope"></i> &ensp;Email: alcaldia.muniluya@gmail.com</p>
             <p class="footer-p"><i class="fa-solid fa-clock"></i> &ensp;Horario: Lun - Vie: 8:00 AM - 5:30 PM</p>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>[SERVITECH] &copy; 2026 Municipalidad Distrital de Luya - Todos los derechos reservados.</p>
+        <p>SERVITECH &copy; 2026 Municipalidad Distrital de Luya - Todos los derechos reservados.</p>
     </div>
 </footer>

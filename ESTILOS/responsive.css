@@ -1,0 +1,100 @@
+/* PARA QUE SEA RESPONSIVE */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: #00772e;
+    cursor: pointer;
+}
+
+/* Tablet y móvil */
+@media (max-width: 992px) {
+
+    .main-nav {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 26px;
+        background: none;
+        border: none;
+        color: #00772e;
+        cursor: pointer;
+    }
+
+    .ul-opciones {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+
+        /* 🔴 CLAVE */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        z-index: 999;
+    }
+
+    .ul-opciones.active {
+        max-height: 400px; /* suficiente para 5 items */
+    }
+
+    .ul-opciones li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ul-opciones li a {
+        display: block;
+        padding: 14px 0;
+        margin: 0;
+    }
+}
+
+/* PARA SLIDER */
+
+@media (max-width: 768px) {
+    .hero-text {
+        bottom: 12vw;
+    }
+
+    .hero-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .hero-text p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .services {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+}
+
+.institucional-bloque {
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .institucional-texto p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+        margin: auto;
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+}

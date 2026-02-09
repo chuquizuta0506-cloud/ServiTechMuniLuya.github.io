@@ -7,8 +7,9 @@
     <title>MDL Noticias</title>
     <link rel="icon" href="img/LOGO TRANSPARENTE MDL.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="estilos-noticias.css">
+    <link rel="stylesheet" href="ESTILOS/estilos.css">
+    <link rel="stylesheet" href="ESTILOS/responsive.css">
+    <link rel="stylesheet" href="ESTILOS/estilos-noticias.css">
 </head>
 
 <body>
@@ -18,15 +19,20 @@
         </div>
         <nav class="main-nav">
             <div class="logo">
-                <img src="img/ENCABEZADO.png" alt="Logo MML">
+                <img src="img/ENCABEZADO.png" alt="Logo MDL">
             </div>
-            <ul>
+            <!-- BOTÓN MENÚ RESPONSIVE -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="ul-opciones">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="municipalidad.html">Municipalidad</a></li>
+                <li><a href="municipalidad.html" >Municipalidad</a></li>
                 <li><a href="noticias.html" class="active">Noticias</a></li>
                 <li><a href="transparencia.html">Transparencia</a></li>
-                <li><a href="tramites.html">Trámites</a></li>
+                <li><a href="tramites.html" >Trámites</a></li>
             </ul>
+            </section>
         </nav>
     </header>
     <section class="biografia-seccion">
@@ -55,7 +61,7 @@
         target="_blank" aria-label="WhatsApp">
         <img src="img/whatsapp.svg" alt="WhatsApp">
     </a>
-    
+    <script src="JS/script.js"></script>
 </body>
 <footer class="footer-municipal">
     <div class="footer-container">
@@ -94,6 +100,6 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>[SERVITECH] &copy; 2026 Municipalidad Distrital de Luya - Todos los derechos reservados.</p>
+        <p>SERVITECH &copy; 2026 Municipalidad Distrital de Luya - Todos los derechos reservados.</p>
     </div>
 </footer>

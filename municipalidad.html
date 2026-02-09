@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MDL Municipalidad</title>
     <link rel="icon" href="img/LOGO TRANSPARENTE MDL.png" type="image/png">
+    <link rel="stylesheet" href="ESTILOS/estilos.css">
+    <link rel="stylesheet" href="ESTILOS/responsive.css">
+    <link rel="stylesheet" href="ESTILOS/muniluya.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -16,40 +19,153 @@
         </div>
         <nav class="main-nav">
             <div class="logo">
-                <img src="img/ENCABEZADO.png" alt="Logo MML" >
+                <img src="img/ENCABEZADO.png" alt="Logo MDL">
             </div>
-            <ul>
+            <!-- BOTÓN MENÚ RESPONSIVE -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="ul-opciones">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="municipalidad.html" class="active" >Municipalidad</a></li>
+                <li><a href="municipalidad.html" class="active">Municipalidad</a></li>
                 <li><a href="noticias.html">Noticias</a></li>
                 <li><a href="transparencia.html">Transparencia</a></li>
                 <li><a href="tramites.html">Trámites</a></li>
             </ul>
+            </section>
         </nav>
     </header>
     <section class="biografia-seccion">
-    <div class="biografia-container">
-        <div class="biografia-texto">
-            <h2 class="nombre-autoridad">JOSE DOLORES RAMIREZ MESTANZA</h2>
-            <h3 class="cargo-autoridad">ALCALDE DEL DISTRITO DE LUYA</h3>
-            
-            <div class="contenido-texto">
-                <p>Nacido en Luya hace 43 años,  ha construido una destacada trayectoria política, empresarial y social que lo ha posicionado como una de las figuras más reconocidas en la escena nacional...</p>
-                
-                <p>Estudió Derecho y Ciencias de la Comunicación en la Universidad Particular de San Martín de Porres. En el ámbito profesional, se ha desempeñado durante más de 25 años como empresario...</p>
-                
-                <p>Su llegada al Congreso de la República se produjo en el 2006, representando al departamento de Lima. Su labor parlamentaria fue reconocida por su lucha constante contra la corrupción...</p>
-            </div>
-        </div>
+        <div class="biografia-container">
+            <section class="institucional">
 
-        <div class="biografia-imagen">
-            <img src="img/FOTO ALCALDE.png" alt="Alcalde">
+                <div class="institucional-container">
+
+                    <!-- ================= ALCALDÍA ================= -->
+                    <div class="institucional-bloque visible">
+                        <div class="institucional-texto">
+                            <h2>Alcaldía Distrital</h2>
+
+                            <h3 class="nombre-autoridad">José Dolores Ramírez Mestanza</h3>
+                            <p class="cargo-autoridad">Alcalde Distrital</p>
+
+                            <p>
+                                El Alcalde Distrital es la máxima autoridad administrativa y política de la
+                                Municipalidad Distrital de Luya. Ejerce la representación legal de la entidad
+                                y dirige la gestión municipal, de conformidad con la Ley Orgánica de Municipalidades.
+                            </p>
+
+                            <ul class="lista-funciones">
+                                <li>Presidir el Concejo Municipal</li>
+                                <li>Dirigir la política y administración municipal</li>
+                                <li>Promulgar ordenanzas y emitir resoluciones de alcaldía</li>
+                                <li>Representar a la municipalidad ante entidades públicas y privadas</li>
+                                <li>Supervisar la ejecución de planes, programas y proyectos municipales</li>
+                            </ul>
+                        </div>
+
+                        <div class="institucional-imagen">
+                            <img src="img/autoridades/alcalde.jpg" alt="Alcalde Distrital de Luya">
+                        </div>
+                    </div>
+
+                    <!-- ================= TENIENTE ALCALDE ================= -->
+                    <div class="institucional-bloque reverse">
+                        <div class="institucional-imagen">
+                            <img src="img/autoridades/teniente-alcalde.jpg" alt="Teniente Alcalde">
+                        </div>
+
+                        <div class="institucional-texto">
+                            <h2>Teniente Alcalde</h2>
+
+                            <h3 class="nombre-autoridad">Eliades Tuesta Cachay</h3>
+
+                            <p>
+                                El Teniente Alcalde reemplaza al Alcalde Distrital en caso de ausencia o
+                                impedimento, y cumple funciones de apoyo en la conducción política y administrativa
+                                del gobierno local, conforme a los acuerdos del Concejo Municipal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ================= CONCEJO MUNICIPAL ================= -->
+                    <div class="institucional-bloque">
+                        <div class="institucional-texto">
+                            <h2>Concejo Municipal</h2>
+                            <p>
+                                Los regidores ejercen funciones normativas y de fiscalización, participando
+                                en la formulación de políticas municipales y en el control de la gestión administrativa.
+                            </p>
+
+                            <ul class="lista-regidores">
+                                <li>Lily Zumaeta Reátegui</li>
+                                <li>Jheyner Tomanguilla Mendoza</li>
+                                <li>Gleny Marleny Cullampe Diapiz</li>
+                                <li>Judith Margarita Mori Castañeda</li>
+                            </ul>
+                        </div>
+
+                        <div class="institucional-imagen">
+                            <img src="img/autoridades/concejo.jpg" alt="Concejo Municipal">
+                        </div>
+                    </div>
+
+                    <!-- ================= GERENCIA MUNICIPAL ================= -->
+                    <div class="institucional-bloque reverse">
+                        <div class="institucional-imagen">
+                            <img src="img/autoridades/gerente.jpg" alt="Gerente Municipal">
+                        </div>
+
+                        <div class="institucional-texto">
+                            <h2>Gerencia Municipal</h2>
+
+                            <h3 class="nombre-autoridad">Edgar Daniel Hernandez Anchay</h3>
+                            <p class="cargo-autoridad">Gerente Municipal</p>
+
+                            <p>
+                                El Gerente Municipal es el funcionario de mayor nivel administrativo y tiene
+                                a su cargo la dirección, coordinación y supervisión de los órganos y unidades
+                                orgánicas de la municipalidad.
+                            </p>
+
+                            <ul class="lista-funciones">
+                                <li>Coordinar la ejecución de políticas municipales</li>
+                                <li>Supervisar la gestión administrativa y operativa</li>
+                                <li>Proponer mejoras en la organización institucional</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ================= ÓRGANOS DE APOYO ================= -->
+                    <div class="institucional-bloque">
+                        <div class="institucional-texto">
+                            <h2>Órganos de Apoyo</h2>
+
+                            <p><strong>Secretaría General</strong></p>
+                            <p class="nombre-autoridad">Lidia Maeli Alvarado Saldaña</p>
+
+                            <p>
+                                Responsable de la gestión documentaria, archivo institucional y apoyo
+                                administrativo al Concejo Municipal y a la Alcaldía, garantizando el
+                                cumplimiento de los procedimientos administrativos.
+                            </p>
+                        </div>
+
+                        <div class="institucional-imagen">
+                            <img src="img/autoridades/secretaria.jpg" alt="Secretaría General">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
         </div>
-    </div>
-</section>
-    <a href="https://wa.me/51956393952?text=Hola,%20quisiera%20información%20sobre..." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-    <img src="img/whatsapp.svg" alt="WhatsApp">
+    </section>
+    <a href="https://wa.me/51956393952?text=Hola,%20quisiera%20información%20sobre..." class="whatsapp-float"
+        target="_blank" aria-label="WhatsApp">
+        <img src="img/whatsapp.svg" alt="WhatsApp">
     </a>
+    <script src="JS/script.js"></script>
 </body>
 <footer class="footer-municipal">
     <div class="footer-container">
@@ -59,9 +175,12 @@
                 Trabajando por el desarrollo integral de nuestro distrito, con transparencia y compromiso social.
             </p>
             <div class="social-links">
-                <a href="https://www.facebook.com/MuniDeLuya" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
-                <a href="https://www.tiktok.com/@munideluya" target="_blank"     aria-label="TikTok"><i class="fab fa-tiktok"></i> TikTok</a>
-                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/MuniDeLuya" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.tiktok.com/@munideluya" target="_blank" aria-label="TikTok"><i
+                        class="fab fa-tiktok"></i> TikTok</a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i> Instagram</a>
             </div>
         </div>
 
@@ -77,13 +196,14 @@
 
         <div class="footer-column">
             <h4>Contáctanos</h4>
-            <p class="footer-p"><i class="fa-solid fa-location-dot"></i> &ensp;Jr. Diego Mori&ensp;#447 - Luya - Amazonas</p>
+            <p class="footer-p"><i class="fa-solid fa-location-dot"></i> &ensp;Jr. Diego Mori&ensp;#447 - Luya -
+                Amazonas</p>
             <p class="footer-p"><i class="fa-solid fa-phone"></i> &ensp;Teléfono: (+51) 900 616 367</p>
             <p class="footer-p"><i class="fa-solid fa-envelope"></i> &ensp;Email: alcaldia.muniluya@gmail.com</p>
             <p class="footer-p"><i class="fa-solid fa-clock"></i> &ensp;Horario: Lun - Vie: 8:00 AM - 5:30 PM</p>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>[SERVITECH] &copy; 2026 Municipalidad Distrital de Luya - Todos los derechos reservados.</p>
+        <p>SERVITECH &copy; 2026 Municipalidad Distrital de Luya - Todos los derechos reservados.</p>
     </div>
 </footer>
